@@ -5,7 +5,12 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '/'
+      '/',
+      '/css/stylesheet.css',
+      '/css/navbar.css',
+      '/assets/home.png',
+      '/assets/run.png',
+      '/assets/user.png'
     ]);
   })());
 });

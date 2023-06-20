@@ -5,15 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
     <link rel="manifest" href="/manifest.json">
     <title>Test PWA</title>
 </head>
 <body>
-    <h1>Test pwa</h1>
-
-
 
     
+
+
+    <footer class="navigation-bar">
+        <div class="nav-item selected" id="nav-home">
+            <div class="icon-container">
+                <img src="assets/home.png" alt="Accueil">
+            </div>
+            <label>Accueil</label>
+        </div>
+
+        <div class="nav-item" id="nav-club">
+            <div class="icon-container">
+                <img src="assets/run.png" alt="Club">
+            </div>
+            <label>Club</label>
+        </div>
+
+        <div class="nav-item" id="nav-account">
+            <div class="icon-container">
+                <img src="assets/user.png" alt="Compte">
+            </div>
+            <label>Compte</label>
+        </div>
+    </footer>
+
     <script>
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('/sw.js', { scope: '/' });

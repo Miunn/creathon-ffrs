@@ -1,0 +1,67 @@
+.navigation-bar {
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0;
+    background-color: #F3EDF7;
+
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 8px;
+    gap: 8px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px 16px;
+    gap: 4px;
+    
+    width: 126.67px;
+    height: 80px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.nav-item .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    width: 64px;
+    height: 32px;
+    
+    background-color: transparent;
+    border-radius: 16px;
+}
+
+.nav-item.selected .icon-container {
+    background-color: #E8DEF8;
+}
+
+.navigation-bar img {
+    width: 17px;
+    height: 17px;
+}
+
+.nav-item label {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.nav-item.selected label {
+    font-weight: 600;
+}

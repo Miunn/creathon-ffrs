@@ -10,7 +10,15 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "/icon512.png",
+            "src": "/assets/home.png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/run.png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/account.png",
             "sizes": "512x512"
         }
     ]
