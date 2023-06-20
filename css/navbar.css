@@ -22,8 +22,8 @@
     padding: 12px 0px 16px;
     gap: 4px;
     
-    width: 126.67px;
-    height: 80px;
+    max-width: 126.67px;
+    max-height: 80px;
     
     
     /* Inside auto layout */
