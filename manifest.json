@@ -1,25 +1,33 @@
 {
-    "lang": "en-us",
-    "name": "Test PWA",
-    "short_name": "TestPWA",
+    "lang": "fr",
+    "name": "Creathon-FFRS",
+    "short_name": "FFRS",
     "description": "A basic PWA application",
     "start_url": "/",
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
-    "orientation": "any",
+    "orientation": "portrait",
     "display": "standalone",
     "icons": [
-        {
-            "src": "/assets/home.png",
-            "sizes": "512x512"
-        },
-        {
-            "src": "/assets/run.png",
-            "sizes": "512x512"
-        },
-        {
-            "src": "/assets/account.png",
-            "sizes": "512x512"
-        }
+      {
+        "src": "/assets/home.png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/assets/run.png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/assets/account.png",
+        "sizes": "512x512"
+      }
+    ],
+    "dir": "ltr",
+    "categories": [
+      "fitness",
+      "lifestyle"
+    ],
+    "display_override": [
+      "window-controls-overlay"
     ]
-}
+  }

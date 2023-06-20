@@ -1,5 +1,5 @@
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
-    "target" : { "namespace": "android_app", "package_name": "[fr.creathon.remicaulier.fr.twa]",
+    "target" : { "namespace": "android_app", "package_name": "[fr.creathon.remicaulier.twa]",
                  "sha256_cert_fingerprints": ["86:3C:1B:38:EC:28:78:47:D0:A3:CA:EA:A6:D0:7E:FE:54:A4:A2:5C:C1:77:2B:B4:98:CB:C4:2A:43:7E:23:23"] }
 }]
