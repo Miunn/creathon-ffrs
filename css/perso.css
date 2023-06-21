@@ -19,6 +19,9 @@ main .section-title {
     text-align: left;
     margin-bottom: 2%;
     margin-top: 10%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .card-summary {
@@ -33,7 +36,7 @@ main .section-title {
 }
 
 .card-summary img {
-    width: 40px;
+    height: 40px;
 }
 
 .card-small {
@@ -46,7 +49,13 @@ main .section-title {
     background: #FEF7FF;
     border-radius: 12px;
     margin: 2% 0;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card-small img {
+    height: 40px;
 }
 
 .card-small .main-info {
