@@ -6,8 +6,8 @@ self.addEventListener('install', event => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
       '/',
+      '/index.html',
       '/club.html',
-      '/account.html',
       '/perso.html',
       '/css/stylesheet.css',
       '/css/navbar.css',
