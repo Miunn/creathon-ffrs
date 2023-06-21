@@ -18,7 +18,7 @@
     color: black;
 }
 
-.nav-item {
+.nav-item div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,6 +65,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    vertical-align: bottom;
 }
 
 .nav-item.selected h3 {

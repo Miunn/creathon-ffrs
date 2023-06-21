@@ -13,7 +13,8 @@ self.addEventListener('install', event => {
       '/css/home.css',
       '/assets/home.png',
       '/assets/run.png',
-      '/assets/user.png'
+      '/assets/user.png',
+      '/script.js'
     ]);
   })());
 });
