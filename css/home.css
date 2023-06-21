@@ -5,7 +5,7 @@ main {
     transform: translateX(-50%);
 }
 
-h3 {
+.section-title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -31,20 +31,92 @@ h3 {
     max-width: 40px;
 }
 
-.card .headline {
+.next-activity .headline {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.card {
+.next-activity {
     line-height: 24px;
 }
 
-.card .date {
+.next-activity .date {
     font-size: 16px;
 }
 
-.card .objectif {
+.next-activity .objectif {
     font-size: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+    gap: 5px;
+}
+
+.next-activity .objectif div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.next-activity .objectif img {
+    max-width: 20px;
+}
+
+.horizontal-line {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0px;
+    border: 2px solid rgba(0, 0, 0, 0.42);
+    width: 90%;
+
+    border-radius: 5px;
+}
+
+.card.actu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card.actu img {
+    max-height: 22px;
+}
+
+.actu-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.actu-description {
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-self: flex-end;
+}
+
+.sign-up a {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: rgba(42, 69, 164, 0.77);
 }
