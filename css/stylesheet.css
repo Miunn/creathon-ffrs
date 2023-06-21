@@ -9,3 +9,13 @@ body {
     background-color: #ffffff;
 }
 
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
