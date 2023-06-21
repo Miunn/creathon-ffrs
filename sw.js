@@ -1,4 +1,4 @@
-const CACHE_NAME = `test-pwa`;
+const CACHE_NAME = `creathon-ffrs`;
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
