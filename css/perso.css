@@ -1,39 +1,87 @@
-body {
-    background-color: #ffffff;
-    align-items: center;
-}
-
-main {
-    width: 95%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-main div {
-    align-items: center;
-}
-
-main .section-title {
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 2%;
-    margin-top: 10%;
-}
-
 .card-summary {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;  
     background: #ECE6F0;
     border-radius: 28px;
-    padding: 2%;
-    margin: 1% 0;
+    padding: 5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 16px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    height: 100px;
+}
+
+.card-summary h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+
+    color: #383D54;
+    
 }
 
 .card-summary img {
     width: 40px;
+}
+
+.score-hero {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+
+.score-hero .score-hero-bg {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color:#C2CAF2;
+    border-radius: 50%;
+}
+
+.score-hero .score-hero-value {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #8590C8 65%,
+        transparent 65%
+      );
+
+    transform: rotate(225deg);
+}
+
+.score-hero .clipper {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ECE6F0;
+}
+
+.score-hero .score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: #383D54;
 }
 
 .card-small {
@@ -43,10 +91,21 @@ main .section-title {
     align-items: center;
     gap: 16px;
     padding: 4%;
-    background: #FEF7FF;
+    background: #ECE6F0;
     border-radius: 12px;
     margin: 2% 0;
     font-size: 20px;
+}
+
+.card-small img {
+    width: 20px;
+}
+
+.card-small p, .card-small span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .card-small .main-info {
