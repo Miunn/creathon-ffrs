@@ -12,6 +12,7 @@ self.addEventListener('install', event => {
       '/css/stylesheet.css',
       '/css/navbar.css',
       '/css/home.css',
+      '/css/club.css',
       '/css/perso.css',
       '/assets/home.png',
       '/assets/run.png',
@@ -21,6 +22,11 @@ self.addEventListener('install', event => {
       '/assets/trophy.svg',
       '/assets/wine.svg',
       '/assets/hiking.svg',
+      '/assets/nordic.svg',
+      '/assets/hiking.png',
+      '/assets/swim.svg',
+      '/assets/swimming.png',
+      '/assets/gym.svg',
       '/script.js'
     ]);
   })());
