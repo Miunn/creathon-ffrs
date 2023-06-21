@@ -1,0 +1,125 @@
+body {
+    background-color: #ffffff;
+    align-items: center;
+}
+
+main {
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .section-title {
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 2%;
+    margin-top: 10%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+main .carousel-sports {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 4% 0;
+}
+
+
+.card-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #ECE6F0;
+    border-radius: 28px;
+    padding: 4%;
+    margin: 1% 0;
+    gap: 16px;
+}
+
+.card-summary img {
+    width: 40px;
+}
+
+.card-summary h3 {
+    font-size: 24px;
+}
+
+.progress-section{
+    margin: 4% 0;
+}
+
+.card-summary label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 2%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #cfccd1;
+    border-radius: 5px;
+    position: relative;
+    right: 0%
+}
+
+.progress-value {
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #6750A4;
+    width: 0%;
+}
+
+.card-small {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 4%;
+    background: #FEF7FF;
+    border-radius: 12px;
+    margin: 2% 0;
+    font-size: 20px;
+}
+
+.card-small .extra-info {
+    font-weight: bold;
+    position: absolute;
+    right: 3%;
+}
+
+.card-mini {
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #79747E;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.card-mini p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    display: inline;
+}
+
+.card-mini img {
+    width: 23px;
+}
