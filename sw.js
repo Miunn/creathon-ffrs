@@ -8,12 +8,19 @@ self.addEventListener('install', event => {
       '/',
       '/club.html',
       '/account.html',
+      '/perso.html',
       '/css/stylesheet.css',
       '/css/navbar.css',
       '/css/home.css',
+      '/css/perso.css',
       '/assets/home.png',
       '/assets/run.png',
       '/assets/user.png',
+      '/assets/restaurant.svg',
+      '/assets/target.svg',
+      '/assets/trophy.svg',
+      '/assets/wine.svg',
+      '/assets/hiking.svg',
       '/script.js'
     ]);
   })());
