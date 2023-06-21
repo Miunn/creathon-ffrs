@@ -64,19 +64,6 @@ main {
     max-width: 20px;
 }
 
-.horizontal-line {
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 0px;
-    border: 2px solid rgba(0, 0, 0, 0.42);
-    width: 90%;
-
-    border-radius: 5px;
-}
-
 .card.actu {
     display: flex;
     flex-direction: column;
