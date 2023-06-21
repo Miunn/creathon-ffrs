@@ -10,6 +10,7 @@ self.addEventListener('install', event => {
       '/account.html',
       '/css/stylesheet.css',
       '/css/navbar.css',
+      '/css/home.css',
       '/assets/home.png',
       '/assets/run.png',
       '/assets/user.png'

@@ -1,0 +1,50 @@
+main {
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    margin-bottom: 16px;
+}
+
+.card {
+    background: #ECE6F0;
+    border-radius: 28px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.card img {
+    max-width: 40px;
+}
+
+.card .headline {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card {
+    line-height: 24px;
+}
+
+.card .date {
+    font-size: 16px;
+}
+
+.card .objectif {
+    font-size: 15px;
+}
