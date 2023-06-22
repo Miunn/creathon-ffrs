@@ -211,8 +211,8 @@ header {
 }
 
 #add-objectif-dialog button {
-    box-sizing: border-box;
     all: unset;
+    box-sizing: border-box;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
