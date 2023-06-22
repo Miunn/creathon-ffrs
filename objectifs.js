@@ -44,7 +44,7 @@ function createObjDOM(sport, distance) {
 function loadObjectifs() {
     const cDecoded = decodeURIComponent(document.cookie); //to be careful
     const cArr = cDecoded.split(';');
-    let objectifs;
+    let objectifs = "";
     cArr.forEach(val => {
         if (val.indexOf("objectif=") === 0) {
             objectifs = val.substring("objectif=".length);
