@@ -210,6 +210,11 @@ header {
     font-size: 14px;
 }
 
+#add-objectif-dialog .buttons {
+    display: flex;
+    gap: 10px;
+}
+
 #add-objectif-dialog button {
     all: unset;
     box-sizing: border-box;
