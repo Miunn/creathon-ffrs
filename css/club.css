@@ -121,9 +121,16 @@ main .carousel-sports {
 
 .card-small .extra-info {
     font-size: 20px;
-    position: absolute;
-    right: 4%;
     font-weight: 400;
+}
+
+.card-small .info {
+    width: 100%;
+}
+
+.card-small .info .info-head {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-mini {
