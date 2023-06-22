@@ -58,7 +58,7 @@ function loadObjectifs() {
     objectifs = objectifs.split("/");
 
     for (var obj of objectifs) {
-        if (obj === "") continue;
+        if (obj == undefined) continue;
         let sport = obj.split(',')[0];
         let distance = obj.split(',')[1];
 
