@@ -218,6 +218,10 @@ dialog button {
     justify-content: center;
 }
 
+#scan-success-dialog button img {
+    height: 50px;
+}
+
 @media screen and (max-width: 500px) {
     #scanner-dialog {
         width: 100%;
