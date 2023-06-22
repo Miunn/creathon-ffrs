@@ -118,27 +118,6 @@
                 </div>
             </div>
         </div>
-
-        <dialog id="scanner-dialog">
-            <form method="dialog">
-                <h3>Scanner le QR Code de l'activité</h3>
-                <div id="cam">
-                    <video autoplay id="stream-video"></video>
-                    <canvas id="canvas"></canvas>
-                </div>
-
-                <button type="submit">Annuler</button>
-            </form>
-        </dialog>
-
-        <dialog id="scan-success-dialog">
-            <form method="dialog">
-                <h3>Activité validé &#127881;</h3>
-
-
-                <button type="submit"><img src="assets/check.png" alt="Valider"></button>
-            </form>
-        </dialog>
     </main>
     <footer class="navigation-bar">
         <a class="nav-item" id="nav-home" href="index.html">
@@ -169,6 +148,26 @@
         </a>
     </footer>
 
+    <dialog id="scanner-dialog">
+        <form method="dialog">
+            <h3>Scanner le QR Code de l'activité</h3>
+            <div id="cam">
+                <video autoplay id="stream-video"></video>
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <button type="submit">Annuler</button>
+        </form>
+    </dialog>
+
+    <dialog id="scan-success-dialog">
+        <form method="dialog">
+            <h3>Activité validé &#127881;</h3>
+
+
+            <button type="submit"><img src="assets/check.png" alt="Valider"></button>
+        </form>
+    </dialog>
     <script>
         if ('serviceWorker' in navigator) {
             // IF HAVING PROBLEMS WITH APP NOT TAKING CHANGES
