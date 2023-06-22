@@ -46,8 +46,10 @@ function loadObjectifs() {
     const cArr = cDecoded.split(';');
     let objectifs;
     cArr.forEach(val => {
-        if (val.indexOf("objectif=") === 0) objectifs = val.substring("objectif=".length);
-    })
+        if (val.indexOf("objectif=") === 0) {
+            objectifs = val.substring("objectif=".length);
+        }
+    });
     
     objectifs = objectifs.split("/");
 
