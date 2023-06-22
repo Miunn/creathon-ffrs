@@ -168,6 +168,9 @@ dialog {
 
     padding: 50px;
     border-radius: 20px;
+
+    display: flex;
+    align-items: center;
 }
 
 dialog form {
