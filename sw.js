@@ -10,9 +10,12 @@ self.addEventListener('install', event => {
       '/account.html',
       '/css/stylesheet.css',
       '/css/navbar.css',
+      '/css/club.css',
+      '/css/perso.css',
       '/assets/home.png',
       '/assets/run.png',
-      '/assets/user.png'
+      '/assets/user.png',
+      '/assets/camera.svg'
     ]);
   })());
 });
