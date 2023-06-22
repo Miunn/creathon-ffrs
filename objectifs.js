@@ -97,3 +97,5 @@ addObjectifDialog.addEventListener("submit", (e) => {
     registerObjectif(data);
     document.location = "club.html"
 });
+
+document.getElementById("cancel-add-obj").addEventListener("click", () => addObjectifDialog.close())
