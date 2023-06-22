@@ -6,10 +6,16 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: #ffffff;
 }
 
 header {
+    max-width: 800px;
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     height: 80px;
     display: flex;
     justify-content: space-evenly;
@@ -19,6 +25,7 @@ header {
 }
 
 main {
+    max-width: 800px;
     width: 95%;
     position: relative;
     left: 50%;
