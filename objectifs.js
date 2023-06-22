@@ -51,6 +51,10 @@ function loadObjectifs() {
         }
     });
     
+    if (objectifs === "") {
+        return;
+    }
+    
     objectifs = objectifs.split("/");
 
     for (var obj of objectifs) {
