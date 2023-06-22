@@ -27,7 +27,8 @@ self.addEventListener('install', event => {
       '/assets/swim.svg',
       '/assets/swimming.png',
       '/assets/gym.svg',
-      '/script.js'
+      '/script.js',
+      '/html5-qrcode.min.js'
     ]);
   })());
 });

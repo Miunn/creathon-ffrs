@@ -16,6 +16,9 @@
 
 
     <link rel="manifest" href="/manifest.json">
+
+    <script src="script.js" defer></script>
+    
     <title>Test PWA</title>
 </head>
 
@@ -135,6 +138,12 @@
 
     <script>
         if ('serviceWorker' in navigator) {
+            /* // IF HAVING PROBLEMS WITH APP NOT TAKING CHANGES
+            caches.keys().then(function(cacheNames) {
+                cacheNames.forEach(function(cacheName) {
+                    caches.delete(cacheName);
+                });
+            });*/
             navigator.serviceWorker.register('/sw.js', { scope: '/' });
         }
     </script>

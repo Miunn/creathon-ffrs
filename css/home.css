@@ -90,3 +90,8 @@
 
     color: rgba(42, 69, 164, 0.77);
 }
+
+#cam {
+    width: 500px;
+    height: 500px;
+}
