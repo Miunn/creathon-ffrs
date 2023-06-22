@@ -170,7 +170,7 @@ dialog form h3, dialog form h4 {
 }
 
 #scanner-dialog video {
-    width: 400px;
+    max-width: 400px;
 }
 
 dialog button {
