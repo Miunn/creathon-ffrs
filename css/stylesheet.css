@@ -58,7 +58,7 @@ main {
 
     margin-bottom: 16px;
 }
-a {
+a, button {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
