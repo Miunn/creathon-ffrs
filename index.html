@@ -16,10 +16,11 @@
 
     <link rel="manifest" href="/manifest.json">
 
-    <script src="html5-qrcode.min.js" defer></script>
+    <script src="html5-qrcode.min.js"></script>
+    <script src="jsQR.js"></script>
     <script src="script.js" defer></script>
 
-    <title>Test PWA</title>
+    <title>FFRS</title>
 </head>
 
 <body>
@@ -33,7 +34,8 @@
         <h3 class="section-title">Prochaine activité</h3>
         <button id="open-cam">Get Cam</button>
         <div id="cam">
-            
+            <video autoplay id="stream-video"></video>
+            <canvas id="canvas"></canvas>
         </div>
         <div class="card next-activity">
             <div class="headline">

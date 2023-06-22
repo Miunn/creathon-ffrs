@@ -5,38 +5,37 @@ window.oncontextmenu = function (event) {
     return false;
 };
 
+var video = document.getElementById("stream-video");
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
 
+function scanQR() {
+    ctx.clearRect(0,0,640,480);
+    ctx.drawImage(video, 0, 0, 640, 480, 0, 0, canvas.width, canvas.height);
+    const code = jsQR(ctx.getImageData(0, 0, 640, 480).data, 640, 480);
 
+    console.log("code:", code);
+}
 
 document.getElementById("open-cam").addEventListener('click', async function init(e) {
     try {
         const stream = await navigator.mediaDevices.getUserMedia({
             audio: false,
             video: {
-                width: 720,
-                height: 720,
+                width: 640,
+                height: 480,
 
             }
         })
 
-        const videoTracks = stream.getVideoTracks();
-        const track = videoTracks[0];
-        alert(`Getting video from: ${track.label}`);
-        document.querySelector('video').srcObject = stream;
+        video.srcObject = stream;
+        var myVar = setInterval(scanQR, 10);
         //The video stream is stopped by track.stop() after 3 second of playback.
     } catch (error) {
         console.log(error);
     }
-})
+});
 
-var html5QrcodeScanner = new Html5QrcodeScanner(
-	"cam", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess);
 
-function onScanSuccess(decodedText, decodedResult) {
-    // Handle on success condition with the decoded text or result.
-    console.log(`Scan result: ${decodedText}`, decodedResult);
 
-    html5QrcodeScanner.clear();
-}
 
