@@ -14,6 +14,7 @@ self.addEventListener('install', event => {
       '/css/home.css',
       '/css/club.css',
       '/css/perso.css',
+      '/assets/add.png',
       '/assets/camera.svg',
       '/assets/check.png',
       '/assets/clock.png',
@@ -36,7 +37,8 @@ self.addEventListener('install', event => {
       '/script.js',
       '/cancel-web-behavior.js',
       '/jsQR.js',
-      '/qr-scan.js'
+      '/qr-scan.js',
+      '/objectifs.js'
     ]);
   })());
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,7 @@
 
     <script src="cancel-web-behavior.js" defer></script>
     <script src="qr-scan.js" defer></script>
+    <script src="objectifs.js" defer></script>
 
     <title>FFRS</title>
 </head>
@@ -84,7 +85,18 @@
 
         <div class="horizontal-line"></div>
 
-        <h1 class="section-title">Objectifs de groupe</h1>
+        <div class="headline-icon-container">
+            <h1 class="section-title">Objectifs personnels</h1>
+            <button id="add-objectif"><img src="assets/add.png" alt="Ajouter un objectif"></button>    
+        </div>
+
+        <div class="card-summary" id="objectifs-perso">
+
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <h1 class="section-title">Objectifs de groupe pour le mois</h1>
 
         <div class="card-summary">
             <div class="progress-section">
@@ -166,6 +178,28 @@
 
 
             <button type="submit"><img src="assets/check.png" alt="Valider"></button>
+        </form>
+    </dialog>
+
+    <dialog id="add-objectif-dialog">
+        <form method="dialog">
+            <h3>Ajouter un objectif</h3>
+
+            <div id="sport-container">
+                <label for="sport">Sport: </label>
+                <select name="sport" id="sport-selector">
+                    <option value="natation">Natation</option>
+                    <option value="randonnée">Randonnée</option>
+                    <option value="gym">Gymnastique</option>
+                </select>    
+            </div>
+
+            <div id="objectif-input">
+                <label for="distance">Distance: </label>
+                <label><input id="distance" type="number" name="distance"> km</label>
+            </div>
+
+            <button type="submit">Ajouter</button>
         </form>
     </dialog>
     <script>

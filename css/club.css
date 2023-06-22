@@ -19,24 +19,35 @@ header {
     cursor: pointer;
 }
 
-main {
-    width: 95%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.headline-icon-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-main .section-title {
+.headline-icon-container button {
+    all: unset;
+    margin-top: 5%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.headline-icon-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-title {
     align-items: flex-start;
     text-align: left;
     margin-bottom: 2%;
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
 }
 
-main .carousel-sports {
+.carousel-sports {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -106,7 +117,7 @@ main .carousel-sports {
     align-items: center;
     gap: 16px;
     padding: 4%;
-    background: #FEF7FF;
+    background: #ECE6F0;
     border-radius: 12px;
     margin: 2% 0;
 
@@ -156,9 +167,75 @@ main .carousel-sports {
     width: 23px;
 }
 
+/* Add objectif dialog */
+#add-objectif-dialog {
+    width: 250px;
+}
+#add-objectif-dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+#add-objectif-dialog h3 {
+    text-align: left;
+}
+
+#add-objectif-dialog #sport-container {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+#add-objectif-dialog select {
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    border-bottom: #6750A4 1px solid;
+}
+
+#add-objectif-dialog #objectif-input {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+#add-objectif-dialog #objectif-input input {
+    border: none;
+    outline: none;
+    width: 50px;
+    text-align: end;
+    border-bottom: #6750A4 1px solid;
+    font-size: 14px;
+}
+
+#add-objectif-dialog button {
+    all: unset;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ECE6F0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* QRCode scanner dialog */
 dialog {
-    position: relative;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
