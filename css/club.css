@@ -3,6 +3,24 @@ body {
     align-items: center;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.qr-button {
+    width: 30px;
+    justify-self: start;
+    margin-left: 10px;
+
+}
+
 main {
     width: 95%;
     position: relative;
