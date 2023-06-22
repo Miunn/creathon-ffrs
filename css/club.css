@@ -171,6 +171,7 @@ dialog form h3, dialog form h4 {
 
 #scanner-dialog video {
     max-width: 300px;
+    align-self: center;
 }
 
 dialog button {
