@@ -18,7 +18,10 @@ header {
     width: 30px;
     justify-self: start;
     margin-left: 10px;
-
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 main {
@@ -140,4 +143,62 @@ main .carousel-sports {
 
 .card-mini img {
     width: 23px;
+}
+
+/* QRCode scanner dialog */
+dialog {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    box-shadow: 0px 0px 0px 100vw #60606099;
+
+    padding: 50px;
+    border-radius: 20px;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+dialog form h3, dialog form h4 {
+    text-align: center;
+}
+
+#scanner-dialog video {
+    width: 400px;
+}
+
+dialog button {
+    all: unset;
+    cursor: pointer;
+}
+
+#scanner-dialog button {
+    align-self: flex-end;
+    padding: 10px;
+
+    font-family: 'Roboto';
+
+    background-color: #ECE6F0;
+    border-radius: 5px;
+}
+
+#scanner-dialog #canvas {
+    display: none;
+}
+
+#scan-success-dialog form {
+    gap:30px;
+    padding: 30px;
+}
+
+#scan-success-dialog button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

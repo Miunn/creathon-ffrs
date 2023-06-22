@@ -16,17 +16,20 @@
 
 
     <link rel="manifest" href="/manifest.json">
-    <title>FFRS</title>
 
-    <script src="script.js" defer></script>
-    
+    <script src="jsQR.js"></script>
+
+    <script src="cancel-web-behavior.js" defer></script>
+    <script src="qr-scan.js" defer></script>
+
+    <title>FFRS</title>
 </head>
 
 <body>
     <header>
-        <a class="qr-button" href="">
+        <button class="qr-button" id="scan-qr-btn" href="">
             <img class="qr-button" src="assets/camera.svg" alt="Camera">
-        </a>
+        </button>
         <a class="logo" href="index.html">
             <img src="assets/ffrs.png" alt="Logo Fédération Française Retraite Sportive">
         </a>
@@ -110,6 +113,26 @@
             </div>
         </div>
     
+        <dialog id="scanner-dialog">
+            <form method="dialog">
+                <h3>Scanner le QR Code de l'activité</h3>
+                <div id="cam">
+                    <video autoplay id="stream-video"></video>
+                    <canvas id="canvas"></canvas>
+                </div>
+
+                <button type="submit">Annuler</button>
+            </form>
+        </dialog>
+
+        <dialog id="scan-success-dialog">
+            <form method="dialog">
+                <h3>Activité validé &#127881;</h3>
+
+
+                <button type="submit"><img src="assets/check.png" alt="Valider"></button>
+            </form>
+        </dialog>
     </main>
     <footer class="navigation-bar">
         <a class="nav-item" id="nav-home" href="index.html">
