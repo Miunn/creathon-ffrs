@@ -60,7 +60,7 @@
             <div>
                 <label>Natation</label>
                 <p>Jeudi 25 Juin, 14h-18h</p>
-            </div>  
+            </div>
         </div>
 
         <div class="card-small">
@@ -68,7 +68,7 @@
             <div>
                 <label>Gym</label>
                 <p>Samedi 27 Juin, 13h30</p>
-            </div>  
+            </div>
         </div>
 
         <div class="card-small">
@@ -76,7 +76,7 @@
             <div class="info">
                 <div class="info-head">
                     <label>Randonnée</label>
-                    <label class="extra-info">8 Km</label>    
+                    <label class="extra-info">8 Km</label>
                 </div>
                 <p>Dimanche 28 Juin, 14h</p>
             </div>
@@ -93,29 +93,32 @@
                     <label for="progress-bar">Objectif 300 km</label>
                     <div class="progress-bar">
                         <div class="progress-value" style="width: 80%;">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="progress-section">
-                <h4>Natation</h4>
-                <div class="stats">
-                    <label for="progress-bar">Objectif 15 km</label>
-                    <div class="progress-bar">
-                        <div class="progress-value" style="width: 50%;">
+                <div class="progress-section">
+                    <h4>Natation</h4>
+                    <div class="stats">
+                        <label for="progress-bar">Objectif 15 km</label>
+                        <div class="progress-bar">
+                            <div class="progress-value" style="width: 50%;">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="progress-section">
-                <h4>Gym</h4>
-                <div class="stats">
-                    <label for="progress-bar">Objectif 45 h</label>
-                    <div class="progress-bar">
-                        <div class="progress-value" style="width: 20%;">
+                    <div class="progress-section">
+                        <h4>Gym</h4>
+                        <div class="stats">
+                            <label for="progress-bar">Objectif 45 h</label>
+                            <div class="progress-bar">
+                                <div class="progress-value" style="width: 20%;">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+
         <dialog id="scanner-dialog">
             <form method="dialog">
                 <h3>Scanner le QR Code de l'activité</h3>
@@ -169,8 +172,8 @@
     <script>
         if ('serviceWorker' in navigator) {
             // IF HAVING PROBLEMS WITH APP NOT TAKING CHANGES
-            caches.keys().then(function(cacheNames) {
-                cacheNames.forEach(function(cacheName) {
+            caches.keys().then(function (cacheNames) {
+                cacheNames.forEach(function (cacheName) {
                     caches.delete(cacheName);
                 });
             });
