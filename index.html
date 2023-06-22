@@ -16,9 +16,11 @@
 
     <link rel="manifest" href="/manifest.json">
 
+    <script src="html5-qrcode.min.js"></script>
+    <script src="jsQR.js"></script>
     <script src="script.js" defer></script>
 
-    <title>Test PWA</title>
+    <title>FFRS</title>
 </head>
 
 <body>
@@ -30,7 +32,11 @@
 
     <main>
         <h3 class="section-title">Prochaine activité</h3>
-
+        <button id="open-cam">Get Cam</button>
+        <div id="cam">
+            <video autoplay id="stream-video"></video>
+            <canvas id="canvas"></canvas>
+        </div>
         <div class="card next-activity">
             <div class="headline">
                 <img src="assets/swimming.png" alt="Randonnée">
@@ -63,7 +69,8 @@
 
             <h4 class="actu-title">La FFRS lance le mur intéractif</h4>
 
-            <p class="actu-description">Votre club organise des séances de test d'un mur intéractif sur plusieurs activités. La FFRS vous met au
+            <p class="actu-description">Votre club organise des séances de test d'un mur intéractif sur plusieurs
+                activités. La FFRS vous met au
                 défi de participier à l'une d'entre elles.<br>Plus d'informations et inscriptions sur la page club</p>
 
             <div class="sign-up">
@@ -105,6 +112,12 @@
 
     <script>
         if ('serviceWorker' in navigator) {
+            /* // IF HAVING PROBLEMS WITH APP NOT TAKING CHANGES
+            caches.keys().then(function(cacheNames) {
+                cacheNames.forEach(function(cacheName) {
+                    caches.delete(cacheName);
+                });
+            });*/
             navigator.serviceWorker.register('/sw.js', { scope: '/' });
         }
     </script>

@@ -90,3 +90,10 @@
 
     color: rgba(42, 69, 164, 0.77);
 }
+
+#canvas {
+    width: 640px;
+    height: 480px;
+
+    display: none;
+}
