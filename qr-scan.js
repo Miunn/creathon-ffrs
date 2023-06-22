@@ -42,7 +42,7 @@ async function openQRDialog() {
                 width: 640,
                 height: 480,
                 facingMode: {
-                    exact: 'environment'
+                    ideal: 'environment'
                 }
             }
         });
